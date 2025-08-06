@@ -1,0 +1,34 @@
+//Rachit Singh
+//A3
+//080
+#include <iostream>
+using namespace std;
+int main() {
+    int marks[2][2];
+    int i, j;
+    for(i=0;i<2;i++) {
+        for(j=0;j<2;j++) {
+            cout << "Enter element ("<<i<<","<<j<<"):";
+            cin >> marks[i][j];
+        }
+    }
+    cout<<"matrix is:"<<endl;
+    for(i=0;i<2;i++) {
+        for(j=0;j<2;j++) {
+            cout<<marks[i][j]<<" ";
+        }
+        cout<<endl;
+    }
+
+    return 0;
+}
+
+OUTPUT:
+
+Enter element (0,0):12
+Enter element (0,1):23
+Enter element (1,0):24
+Enter element (1,1):31
+matrix is:
+12 23 
+24 31
