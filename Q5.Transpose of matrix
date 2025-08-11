@@ -1,0 +1,47 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int rows, cols;
+
+    
+    cout << "Enter rows and columns of the matrix: ";
+    cin >> rows >> cols;
+
+    int a[rows][cols], transpose[cols][rows];
+    cout << "Enter elements of the matrix:\n";
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            cin >> a[i][j];
+        }
+    }
+
+    
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            transpose[j][i] = a[i][j];
+        }
+    }
+
+    
+    cout << "Transpose of the matrix:\n";
+    for (int i = 0; i < cols; i++) {
+        for (int j = 0; j < rows; j++) {
+            cout << transpose[i][j] << " ";
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
+
+OUTPUT:
+Enter rows and columns of the matrix: 2 2
+Enter elements of the matrix:
+3 4
+5 6
+Transpose of the matrix:
+3 5 
+4 6 
+
+
